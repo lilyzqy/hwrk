@@ -1,15 +1,15 @@
-// window.setTimeout(function () {
-//   alert('HAMMERTIME');
-// }, 5000);
-//
-//
-// function hammerTime(time){
-//   window.setTimeout(function () {
-//     alert(`${time} is hammertime!`)
-//   }, 5000);
-// }
+window.setTimeout(function () {
+  alert('HAMMERTIME');
+}, 5000);
 
-//tea?
+
+function hammerTime(time){
+  window.setTimeout(function () {
+    alert(`${time} is hammertime!`)
+  }, 5000);
+}
+
+// tea?
 const readline = require('readline');
 
 const reader = readline.createInterface({
@@ -34,6 +34,7 @@ function teaAndBiscuits(){
   });
 }
 
+// cat dog
 function Cat () {
   this.name = 'Markov';
   this.age = 3;
@@ -50,3 +51,8 @@ Dog.prototype.chase = function (cat) {
 
 const Markov = new Cat ();
 const Noodles = new Dog ();
+
+Noodles.chase(Markov);
+
+Noodles.chase.call(Markov, Noodles);
+Noodles.chase.apply(Markov, [Noodles]);
