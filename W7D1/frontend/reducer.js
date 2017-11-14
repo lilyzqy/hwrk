@@ -4,7 +4,16 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-  return state; // remove this and fill out the body of the reducer function
+  switch(action.type) {
+    case "SWITCH_CURRENCY":
+       newState = {
+        baseCurrency: action.baseCurrency,
+        rates: action.rates
+      };
+      return newState;
+    default:
+      return state;
+  }
 };
 
 export default reducer;
