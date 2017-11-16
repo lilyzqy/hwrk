@@ -12611,15 +12611,24 @@ var Blue = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement('h2', { className: 'blue' })
+        _react2.default.createElement('h2', { className: 'blue' }),
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          { to: '/blue' },
+          'Red Only'
+        ),
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          { to: '/blue/indigo' },
+          'Orange'
+        ),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/blue/indigo', component: _indigo2.default })
       );
     }
   }]);
 
   return Blue;
 }(_react2.default.Component);
-
-;
 
 exports.default = Blue;
 
@@ -12754,15 +12763,30 @@ var Red = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement('h2', { className: 'red' })
+        _react2.default.createElement('h2', { className: 'red' }),
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          { to: '/red' },
+          'Red Only'
+        ),
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          { to: '/red/orange' },
+          'Orange'
+        ),
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          { to: '/red/yellow' },
+          'Yellow'
+        ),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/red/orange', component: _orange2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/red/yellow', component: _yellow2.default })
       );
     }
   }]);
 
   return Red;
 }(_react2.default.Component);
-
-;
 
 exports.default = Red;
 
