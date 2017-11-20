@@ -1,10 +1,29 @@
 nav {
   background-color: black;
-  display: block;
+  display: flex;
   position: relative;
+  color: white;
+  padding: 5px;
+  align-items: center;
+}
+
+nav a {
+  color:white;
+  margin-right: 50px;
 }
 
 .heropic {
   display: block;
   position: absolute;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  text-align: left;
+}
+
+form {
+  margin: 10px;
 }
