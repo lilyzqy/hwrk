@@ -1,0 +1,10 @@
+nav {
+  background-color: black;
+  display: block;
+  position: relative;
+}
+
+.heropic {
+  display: block;
+  position: absolute;
+}
